@@ -20,7 +20,7 @@ void clear()
 
 int main(int argc, const char * argv[])
 {
-	clear();
+//	clear();
 
 	if (argc == 2)
 	{
@@ -161,7 +161,7 @@ int main(int argc, const char * argv[])
 						}
 						catch (const std::bad_variant_access & ex)
 						{
-							std::cout << ex.what();
+							std::cout << ex.what() << '\n';
 							continue;
 						}
 					}
@@ -183,19 +183,19 @@ int main(int argc, const char * argv[])
 						}
 						catch (const std::bad_variant_access & ex)
 						{
-							std::cout << ex.what();
+							std::cout << ex.what() << '\n';
 							continue;
 						}
 					}
 				}
 				catch (const std::invalid_argument & ex)
 				{
-					std::cout << ex.what();
+					std::cout << ex.what() << '\n';
 					continue;
 				}
 				catch (const std::out_of_range & ex)
 				{
-					std::cout << ex.what();
+					std::cout << ex.what() << '\n';
 					continue;
 				}
 				catch (...)

@@ -179,7 +179,7 @@ namespace ini
 				{
 					if (_file.at(section).find(variable)->second.empty())
 					{
-						throw std::invalid_argument("Variable \"" + variable + "\" is empty!\n");
+						throw std::invalid_argument("Variable \"" + variable + "\" is empty!");
 					}
 					else
 					{
@@ -188,17 +188,17 @@ namespace ini
 				}
 				else
 				{
-					throw std::invalid_argument("No variable found at section " + section + "!\n");
+					throw std::invalid_argument("No variable found at section " + section + "!");
 				}
 			}
 			else
 			{
-				throw std::invalid_argument("No section found!\n");
+				throw std::invalid_argument("No section found!");
 			}
 		}
 		else
 		{
-			throw std::invalid_argument("Invalid argument passed!\n");
+			throw std::invalid_argument("Invalid argument passed!");
 		}
 	}
 }
